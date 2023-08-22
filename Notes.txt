@@ -1,0 +1,15 @@
+Create new repo in Github
+Create new project in Spring Starter
+Import project in Intellij
+
+git init
+git branch -m master main
+git remote add origin https://github.com/shreya-sagar/spring-framework-in-depth.git
+git add .
+git commit -m "initial commit 2"
+git branch --set-upstream-to=origin/main main
+git pull origin main --allow-unrelated-histories
+git push
+
+git config --global core.autocrlf true
+--------------------------------------------------------------------------------------------
