@@ -13,3 +13,11 @@ git push
 
 git config --global core.autocrlf true
 --------------------------------------------------------------------------------------------
+Scopes in Spring 
+1. Singleton (Default) - 1 instance per Spring container
+2. Prototype - New bean per request
+Web-aware projects
+3. Request
+4. Session
+5. Global
+--------------------------------------------------------------------------------------------

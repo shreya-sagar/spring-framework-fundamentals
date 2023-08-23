@@ -1,4 +1,4 @@
-package dev.shreya.springframeworkindepth.model.service;
+package dev.shreya.springframeworkindepth.service;
 
 import dev.shreya.springframeworkindepth.model.Speaker;
 import java.util.List;

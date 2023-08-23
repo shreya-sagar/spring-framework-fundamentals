@@ -1,15 +1,24 @@
-/*
 package dev.shreya.springframeworkindepth;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import dev.shreya.springframeworkindepth.config.AppConfigWithStereotypeAnnotations;
+import dev.shreya.springframeworkindepth.service.SpeakerService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-@SpringBootApplication
 public class SpringFrameworkInDepthApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringFrameworkInDepthApplication.class, args);
+    //ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+    ApplicationContext applicationContext = new AnnotationConfigApplicationContext(
+        AppConfigWithStereotypeAnnotations.class);
+
+    //SpeakerService speakerService = new SpeakerServiceImpl();
+    SpeakerService speakerService = applicationContext.getBean("speakerService",SpeakerService.class);
+    System.out.println(speakerService);
+    System.out.println(speakerService.findAll().get(0).getFirstName());
+    SpeakerService speakerService2 = applicationContext.getBean("speakerService",SpeakerService.class);
+    System.out.println(speakerService2);
 	}
 
 }
-*/
+
