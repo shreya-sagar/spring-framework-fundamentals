@@ -23,4 +23,7 @@ Web-aware projects
 --------------------------------------------------------------------------------------------
 Bean Lifecycle
 Instantianation -> Populate Properties -> BeanNameAware -> BeanFactoryAware -> Pre-Initialization - BeanPostProcessors -> Initialize Bean -> init Method -> 
-Post-Initialization - BeanPostProcessors 
+Post-Initialization - BeanPostProcessors
+--------------------------------------------------------------------------------------------
+@Profile("dev")
+Edit Configuration -> Java -> Add VM options -Dspring.profiles.active=dev 

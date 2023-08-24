@@ -27,9 +27,13 @@ public class SpringFrameworkInDepthApplication {
         SpeakerServiceStereotype.class);
     System.out.println(speakerServiceStereotype);
     System.out.println(speakerServiceStereotype.findAll().get(0).getFirstName());
+    System.out.println(speakerServiceStereotype.findAll().get(0).getSeedNum());
 
     SpeakerServiceStereotype speakerServiceStereotype2 = applicationContext2.getBean(SpeakerServiceStereotype.class);
     System.out.println(speakerServiceStereotype2);
+
+    //Edit Configuration -> Java -> Add VM options -Dspring.profiles.active=dev
+    System.out.println("PROFILES ACTIVE: "+String.join(",",applicationContext2.getEnvironment().getActiveProfiles()));
 	}
 
 }
