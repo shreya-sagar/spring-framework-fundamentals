@@ -1,12 +1,9 @@
-package dev.shreya.springframeworkindepth.service;
+package dev.shreya.springframeworkindepth.xmlconfig.service;
 
-import dev.shreya.springframeworkindepth.model.Speaker;
-import dev.shreya.springframeworkindepth.repository.SpeakerRepository;
+import dev.shreya.springframeworkindepth.xmlconfig.model.Speaker;
+import dev.shreya.springframeworkindepth.xmlconfig.repository.SpeakerRepository;
 import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service("speakerService")
 public class SpeakerServiceImpl implements SpeakerService {
   private SpeakerRepository speakerRepository;
 
@@ -14,7 +11,7 @@ public class SpeakerServiceImpl implements SpeakerService {
     System.out.println("SpeakerServiceImpl No Args Constructor");
   }
 
-  @Autowired
+  //@Autowired
   public SpeakerServiceImpl(SpeakerRepository speakerRepository) {
     System.out.println("SpeakerServiceImpl speakerRepository Constructor");
     this.speakerRepository = speakerRepository;

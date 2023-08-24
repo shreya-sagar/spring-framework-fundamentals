@@ -1,4 +1,4 @@
-package dev.shreya.springframeworkindepth.model;
+package dev.shreya.springframeworkindepth.xmlconfig.model;
 
 public class Speaker {
   private String firstName;
