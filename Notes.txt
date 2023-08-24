@@ -21,3 +21,6 @@ Web-aware projects
 4. Session
 5. Global
 --------------------------------------------------------------------------------------------
+Bean Lifecycle
+Instantianation -> Populate Properties -> BeanNameAware -> BeanFactoryAware -> Pre-Initialization - BeanPostProcessors -> Initialize Bean -> init Method -> 
+Post-Initialization - BeanPostProcessors 

@@ -1,12 +1,12 @@
-package dev.shreya.springframeworkindepth.repository;
+package dev.shreya.springframeworkindepth.javaconfig.stereotype.repository;
 
-import dev.shreya.springframeworkindepth.model.Speaker;
+import dev.shreya.springframeworkindepth.javaconfig.model.Speaker;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Repository;
 
-@Repository("speakerRepository")
-public class SpeakerRepositoryHibernateImpl implements SpeakerRepository {
+@Repository//("speakerRepository")
+public class SpeakerRepositoryHibernateImpl implements SpeakerRepositoryStereotype {
 
   @Override
   public List<Speaker> findAll() {
